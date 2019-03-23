@@ -80,10 +80,11 @@ ormidp.test(3, 1, 1, 3, or=1) #Mid P-value
 
 #Analysis of infant malformation data
 Malform <- matrix(c(17066, 14464, 788, 126, 37, 48, 38, 5, 1, 1), ncol=2)
+Malform
+
 library(vcdExtra)
 CMHtest(Malform, rscores=c(0, 0.5, 1.5, 4.0, 7.0)) #M-test
 sqrt(6.5699)
 1-pnorm(2.56318)
-
 
 #####END
