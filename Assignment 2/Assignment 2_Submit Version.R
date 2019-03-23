@@ -26,7 +26,11 @@ num1again <- data.frame(num1again, row.names=c("Surgery", "Radiation Therapy"))
 colnames(num1again) <- c("Controlled", "Not Controlled")
 num1again
 
+num1expect <- chisq.test(num1again)$expected
+num1expect
+
 chisq.test(num1again) #Pearson's chi-square test
+
 
 library(DescTools)
 GTest(num1again) # LR Test
@@ -71,6 +75,7 @@ num3 <- matrix(c(9, 44, 13, 10, 11, 52, 23, 22, 9, 41, 12, 27), ncol=3)
 num3
 
 library(vcdExtra)
+
 CMHtest(num3, rscores=c(1, 2, 3, 4), cscores = c(1, 2, 3)) #M-test
 sqrt(4.7489)
 1-pnorm(2.179197)
