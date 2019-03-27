@@ -102,5 +102,6 @@ stdres
 library(DescTools)
 GTest(GenderGap2)  #Likelihood-ratio(LR) test
 
-
+# > oddsratio(c(21, 2, 8, 9), method="wald", conf=0.95, correct=FALSE) #Wald test and CI for OR
+oddsratio(c(9, 11, 9, 44, 52, 41, 13, 23, 12, 10, 22, 27), method='wald', conf=0.95, correct=FALSE)
 

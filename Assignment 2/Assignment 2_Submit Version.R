@@ -68,6 +68,7 @@ num2residual
 
 # c
 # OR from the cells at the 4 corners
+oddsratio(matrix(c(9, 11, 9, 44, 52, 41, 13, 23, 12, 10, 22, 27), nrow=3), method='wald', conf=0.95, correct=FALSE)
 
 # 3
 # a
