@@ -16,7 +16,7 @@ fit = glm(sat~width, family = poisson(link = "log"), data = Crabs) #Poisson regr
 summary(fit)
 
 
-#install.packages("AER")
+# install.packages("AER")
 library(AER)
 dispersiontest(fit, trafo=1) #overdispersion test develoepd by Cameron and Trivedi(1990)
 
@@ -26,7 +26,7 @@ summary(fit2)
 sqrt(summary(fit2)$dispersion) #sqrt(phi)
 
 
-#install.packages("MASS")
+# install.packages("MASS")
 library(MASS)
 fit3 = glm.nb(sat~width, data = Crabs) #NB regression
 summary(fit3)
